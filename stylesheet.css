@@ -1,0 +1,222 @@
+/* font-family: 'Prata', serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  --main-color: black;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.center-text {
+  text-align: center;
+}
+
+body.main-background {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #464646;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  background-color: var(--main-color);
+  opacity: 0.8;
+  width: 100%;
+  padding: 15px 0;
+  white-space: nowrap;
+  z-index: 101;
+}
+
+.nav-item,
+.footer-item {
+  font-size: 1.5em;
+  margin: 0 25px;
+}
+
+.nav-item:hover,
+.footer-item:hover {
+  cursor: pointer;
+  user-select: none;
+}
+
+/******************************************** MENU */
+
+.menu-container {
+  width: 70%;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 250px;
+}
+
+.card-menu {
+  width: 50vw;
+  min-height: calc(50vw / 2);
+  margin: 75px 0;
+  background-color: white;
+  position: relative;
+}
+
+.img-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #464646;
+  background-size: cover;
+  justify-content: flex-end;
+  box-shadow: 0 10px 16px -6px black;
+  box-shadow: 0 10px 16px -6px black;
+}
+
+.card-menu-description {
+  width: 30%;
+  height: 100%;
+  background-color: var(--main-color);
+  opacity: 0.9;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 25px;
+  overflow: auto;
+}
+
+.dish-title {
+  font-size: 2em;
+  margin: 15px 0;
+  font-family: "Prata", serif;
+}
+
+.dish-paragraph,
+.price {
+  margin: 15px 0;
+}
+
+/************************************* HOME PAGE */
+
+.main-center {
+  position: absolute;
+  max-width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--main-color);
+  padding: 50px;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.restaurant-name {
+  align-items: center;
+  font-size: 1.3em;
+  user-select: none;
+}
+
+h1.name {
+  font-family: "Prata", serif;
+  font-size: 3.5em;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+}
+
+.quote {
+  margin-top: 50px;
+  font-style: italic;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  margin-top: -200px;
+  background-color: var(--main-color);
+  opacity: 0.8;
+  width: 100%;
+  padding: 15px 0;
+  justify-content: space-around;
+  z-index: 100;
+}
+
+.footer-item {
+  font-size: 1em;
+}
+
+.github-logo {
+  width: 1.2em;
+  margin-right: 5px;
+}
+
+/* CONTACT US */
+
+.form-container {
+  width: 65%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+input,
+textarea {
+  width: 80%;
+  padding: 15px;
+  margin: 25px 0;
+}
+
+.btn {
+  padding: 15px;
+  border: 2px solid white;
+  color: white;
+  background-color: var(--main-color);
+  width: 180px;
+}
+
+.btn:hover {
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  background-color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px; /* 50% */
+  }
+  h1.name {
+    font-size: 2.5em;
+  }
+  .menu-container {
+    width: 100%;
+  }
+  .card-menu {
+    width: 70vw;
+    min-height: calc(70vw / 2);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* Specific to this particular image */
+  .card-menu {
+    width: 90vw;
+    min-height: calc(90vw / 2);
+  }
+}
