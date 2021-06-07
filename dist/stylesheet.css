@@ -16,10 +16,6 @@
   display: flex;
 }
 
-.center-text {
-  text-align: center;
-}
-
 body.main-background {
   background-position: center center;
   background-repeat: no-repeat;
@@ -29,7 +25,6 @@ body.main-background {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-image: url(/dist/images/outside-front.png);
 }
 
 .navbar {
@@ -173,7 +168,7 @@ h1.name {
   transform: translate( 0, -50%);
   background-color: var(--main-color);
   padding: 50px;
-  opacity: 0.8;
+  opacity: 0.9;
   text-align: center;
 }
 
@@ -186,11 +181,6 @@ h1.name {
 
 
 @media screen and (max-width: 1024px) {
-  /* Specific to this particular image */
-  img.bg {
-    left: 50%;
-    margin-left: -512px; /* 50% */
-  }
   h1.name {
     font-size: 2.5em;
   }
@@ -204,7 +194,6 @@ h1.name {
 }
 
 @media screen and (max-width: 800px) {
-  /* Specific to this particular image */
   .card-menu {
     width: 90vw;
     min-height: calc(90vw / 2);

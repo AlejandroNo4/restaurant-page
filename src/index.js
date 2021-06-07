@@ -1,5 +1,7 @@
+import { footer } from "/src/footer";
 import { homePage } from "/src/home";
 import { menuPage } from "/src/menu";
+import { contactPage } from "/src/contact";
 
 const main = document.getElementById("content");
 
@@ -22,12 +24,15 @@ const navBar = () => {
   listOfElements.appendChild(menu);
   listOfElements.appendChild(contact);
 
-  home.addEventListener('click', ()=>{
-    main.replaceChild(homePage(), main.children[2])
-  })
-  menu.addEventListener('click', () =>{
-    main.replaceChild(menuPage(), main.children[2])
-  })
+  home.addEventListener("click", () => {
+    main.replaceChild(homePage(), main.children[2]);
+  });
+  menu.addEventListener("click", () => {
+    main.replaceChild(menuPage(), main.children[2]);
+  });
+  contact.addEventListener("click", () => {
+    main.replaceChild(contactPage(), main.children[2]);
+  });
 
   listOfElements.classList.add("d-flex", "navbar");
 
@@ -36,43 +41,6 @@ const navBar = () => {
   return nav;
 };
 
-const footer = () => {
-  const footer = document.createElement("footer");
-
-  const listOfFooter = document.createElement("ul");
-  const canva = document.createElement("li");
-  const github = document.createElement("li");
-  const icons = document.createElement("li");
-
-  const gitIcon = document.createElement("img");
-  const gitLegend = document.createElement("span");
-  gitIcon.src = "/dist/images/icons/github.svg";
-  gitIcon.classList.add("github-logo");
-  gitLegend.innerText = "Github";
-  github.appendChild(gitIcon);
-  github.appendChild(gitLegend);
-
-  canva.innerText = "Images: Canva.com";
-  icons.innerText = "Icons: Icons8.com";
-
-  canva.classList.add("footer-item");
-  icons.classList.add("footer-item");
-  github.classList.add("footer-item", "d-flex");
-
-  listOfFooter.appendChild(canva);
-  listOfFooter.appendChild(icons);
-  listOfFooter.appendChild(github);
-
-  listOfFooter.classList.add("d-flex", "footer");
-
-  footer.appendChild(listOfFooter);
-
-  return footer;
-};
-
-
 main.appendChild(navBar());
 main.appendChild(footer());
 main.appendChild(homePage());
-
-
