@@ -5,13 +5,13 @@ const menuPage = () => {
   body.classList.add("main-background");
   body.style.backgroundImage = "url(/dist/images/menu-bg.png)";
 
-  const mainMenu = document.createElement("div")
+  const mainMenu = document.createElement("div");
   mainMenu.classList.add("menu-container", "d-flex");
 
-  const title =  document.createElement("h1")
-  title.innerText = "Menu"
-  title.classList.add("name")
-  mainMenu.appendChild(title)
+  const title = document.createElement("h1");
+  title.innerText = "Menu";
+  title.classList.add("name");
+  mainMenu.appendChild(title);
 
   mainMenu.appendChild(menuItem("Picanha", "89"));
   mainMenu.appendChild(menuItem("Cowboy", "75"));
@@ -22,7 +22,7 @@ const menuPage = () => {
   mainMenu.appendChild(menuItem("Tomahawk", "94"));
   mainMenu.appendChild(menuItem("Wagyu", "250"));
 
-  return mainMenu
+  return mainMenu;
 };
 
 const menuItem = (name, price) => {

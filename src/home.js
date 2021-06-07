@@ -1,10 +1,9 @@
 export { homePage };
 
 const homePage = () => {
-  const body = document.body
+  const body = document.body;
   body.classList.add("main-background");
   body.style.backgroundImage = "url(/dist/images/pub.png)";
-
 
   const center = document.createElement("div");
   const nameContainer = document.createElement("div");

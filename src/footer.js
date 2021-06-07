@@ -1,4 +1,4 @@
-export { footer }
+export { footer };
 
 const footer = () => {
   const footer = document.createElement("footer");
@@ -20,13 +20,13 @@ const footer = () => {
   canva.classList.add("footer-item");
   github.classList.add("footer-item", "d-flex");
 
-  canva.addEventListener("click", ()=>{
+  canva.addEventListener("click", () => {
     window.open("https://www.canva.com/");
-  })
+  });
 
-  github.addEventListener("click", ()=>{
+  github.addEventListener("click", () => {
     window.open("https://github.com/AlejandroNo4");
-  })
+  });
 
   listOfFooter.appendChild(canva);
   listOfFooter.appendChild(github);
