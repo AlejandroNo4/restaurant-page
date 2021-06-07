@@ -1,6 +1,8 @@
 import { homePage } from "/src/home";
 import { menuPage } from "/src/menu";
 
+const main = document.getElementById("content");
+
 const navBar = () => {
   const nav = document.createElement("nav");
   const listOfElements = document.createElement("ul");
@@ -21,10 +23,10 @@ const navBar = () => {
   listOfElements.appendChild(contact);
 
   home.addEventListener('click', ()=>{
-    homePage()
+    main.replaceChild(homePage(), main.children[2])
   })
   menu.addEventListener('click', () =>{
-    menuPage()
+    main.replaceChild(menuPage(), main.children[2])
   })
 
   listOfElements.classList.add("d-flex", "navbar");
@@ -68,9 +70,9 @@ const footer = () => {
   return footer;
 };
 
-const main = document.getElementById("content");
+
 main.appendChild(navBar());
 main.appendChild(footer());
+main.appendChild(homePage());
 
-homePage()
 

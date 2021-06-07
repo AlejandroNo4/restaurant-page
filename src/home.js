@@ -5,11 +5,7 @@ const homePage = () => {
   body.classList.add("main-background");
   body.style.backgroundImage = "url(/dist/images/pub.png)";
 
-  const main = document.getElementById("content");
-  main.appendChild(centerDiv());
-};
 
-const centerDiv = () => {
   const center = document.createElement("div");
   const nameContainer = document.createElement("div");
   const name = document.createElement("h1");

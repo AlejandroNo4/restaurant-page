@@ -163,36 +163,22 @@ h1.name {
 
 /* CONTACT US */
 
-.form-container {
+.contact-container {
   width: 65%;
   height: 100vh;
-  display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
   justify-content: center;
+  font-size: 1.3em;
 }
 
-input,
-textarea {
-  width: 80%;
-  padding: 15px;
-  margin: 25px 0;
+.contact-info{
+  flex-direction: column;
 }
 
-.btn {
-  padding: 15px;
-  border: 2px solid white;
-  color: white;
-  background-color: var(--main-color);
-  width: 180px;
-}
-
-.btn:hover {
-  border: 2px solid var(--main-color);
-  color: var(--main-color);
-  background-color: white;
-  cursor: pointer;
+.info{
+  margin-left: 5px;
 }
 
 @media screen and (max-width: 1024px) {

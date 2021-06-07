@@ -5,11 +5,8 @@ const menuPage = () => {
   body.classList.add("main-background");
   body.style.backgroundImage = "url(/dist/images/menu-bg.png)";
 
-  const main = document.getElementById("content");
-
   const mainMenu = document.createElement("div")
   mainMenu.classList.add("menu-container", "d-flex");
-  main.appendChild(mainMenu)
 
   const title =  document.createElement("h1")
   title.innerText = "Menu"
@@ -24,6 +21,8 @@ const menuPage = () => {
   mainMenu.appendChild(menuItem("Brisket", "80"));
   mainMenu.appendChild(menuItem("Tomahawk", "94"));
   mainMenu.appendChild(menuItem("Wagyu", "250"));
+
+  return mainMenu
 };
 
 const menuItem = (name, price) => {
