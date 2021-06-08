@@ -21,6 +21,11 @@ That is, the content is not at different HTML pages, but Webpack compiles the ja
 
 [Live version here!](https://alejandrono4.github.io/restaurant-page/)
 
+## Prerequisites
+
+- [Node.js](https://nodejs.org/en/) installed.
+- Vs Code
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -34,11 +39,19 @@ To get a local copy up and running follow these simple example steps.
 
         $ cd User/Documents/restaurant-page
 
-- You are done! Now to open the project on your text editor, just type:
+- Now to install Webpack, run in your terminal:
 
-      $ code .
+        $ npm install webpack webpack-cli --save-dev
 
-- Once inside, to run the project, open the "dist" folder. Then right-click on the index.html file and click on open with Live Server.
+- You are done with the installations! Now to run the project, first type:
+
+        $ code .
+
+- This must open Vs code. For now, keep it open. Go back to your terminal and now run: 
+
+        $ npm run build
+
+- Now back on Vs Code, open the "dist" folder. Then right-click on the index.html file and click on open with Live Server.
 
 <br/>
 
