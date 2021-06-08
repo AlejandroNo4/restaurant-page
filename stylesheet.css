@@ -6,8 +6,9 @@
   vertical-align: baseline;
   list-style: none;
   text-decoration: none;
+
   --main-color: #061828;
-  --secondary-color: #D8E1E7;
+  --secondary-color: #d8e1e7;
   --detail-color: #ffe100d9;
 }
 
@@ -95,7 +96,6 @@ body.main-background {
 }
 
 h1.name {
-  color: var(--detail-color);
   font-family: "Prata", serif;
   font-size: 3.5em;
   color: var(--secondary-color);
@@ -165,7 +165,7 @@ h1.name {
   margin: 15px 0;
 }
 
-.price{
+.price {
   color: var(--detail-color);
 }
 
@@ -198,9 +198,11 @@ h1.name {
   h1.name {
     font-size: 2.5em;
   }
+
   .menu-container {
     width: 100%;
   }
+
   .card-menu {
     width: 70vw;
     min-height: calc(70vw / 2);
