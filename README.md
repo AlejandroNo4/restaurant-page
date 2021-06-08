@@ -11,8 +11,7 @@
 This project is part of the Microverse curriculum "Javascript." It is made with learning proposes. To practice the creation of a web page using javascript and Webpack.
 
 
-The structure is designed so that the index.js document imports all the modules to visit. (home.js, menu.js
-, and contact.js) Also, here is the code that handles the page content change.
+The structure is designed so that the index.js document imports all the modules to visit. (home.js, menu.js, and contact.js) Also, here is the code that handles the page content change.
 
 
 That is, the content is not at different HTML pages, but Webpack compiles the javascript modules to generate a single file that can be read by the web browser.
