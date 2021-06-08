@@ -1,65 +1,67 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Restaurant Page
 
-> One paragraph statement about the project.
+> A restaurant page made with javascript using webpack.
 
-![screenshot](./app_screenshot.png)
+<p align="center">
+  <img src="app_screenshot.png" width="800">
+</p>
 
-Additional description about the project and its features.
+This project is part of the Microverse curriculum "Javascript." It is made with learning proposes. To practice the creation of a web page using javascript and webpack.
 
-## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+The structure is designed so that the index.js document imports all the modules to visit. (home.js, menu.js
+and contact.js) Also, here is the code that handles the page content change.
 
-## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+That is, the content is not in different HTML pages, but Webpack compiles the javascript modules to generate a single file that can be read by the web browser.
 
+
+## Live Version
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+- At first, you have to clone this repository. Open your terminal and paste this without the $ sign.
 
-### Setup
+      $ git clone https://github.com/AlejandroNo4/restaurant-page.git
 
-### Install
+- Now that you have the repository in your local machine. Change the direction of the local file with your terminal. Just type "$ cd" (without the $ sign) and the path to reach the library-js folder.<br/>
+  Something like:
 
-### Usage
+        $ cd User/Documents/restaurant-page
 
-### Run tests
+- You are done! Now to open the project on your text editor, just type:
 
-### Deployment
+      $ code .
 
+- Once inside, to run the project, open the "dist" folder. Then right-click on the index.html file and click on open with Live Server.
 
+<br/>
 
-## Authors
+## Built With
+
+- Javascript
+- VS Code
+- Git
+- HTML
+- CSS
+
+## Author
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@AlejandroNo4](https://github.com/AlejandroNo4)
+- Twitter: [@Alejand80002666](https://twitter.com/Alejand80002666)
+- LinkedIn: [Alejandro Contreras Rodriguez](https://www.linkedin.com/in/alejandro-contreras-rodriguez-b524821b5)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [Issues page](https://github.com/AlejandroNo4/restaurant-page/issues).
 
 ## Show your support
 
@@ -67,9 +69,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Images from [Canva.com](https://www.canva.com/)
+- Fonts from [google fonts](https://fonts.google.com/) ("Mate" and "Prata")
 
 ## 📝 License
 
