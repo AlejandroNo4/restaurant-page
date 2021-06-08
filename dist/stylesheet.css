@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  list-style: none;
+  text-decoration: none;
+
+  --main-color: #061828;
+  --secondary-color: #d8e1e7;
+  --detail-color: #ffe100d9;
+}
+
+.d-flex {
+  display: flex;
+}
+
+body.main-background {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: var(--main-color);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* NAVBAR AND FOOTER */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  background-color: var(--main-color);
+  opacity: 0.9;
+  width: 100%;
+  padding: 15px 0;
+  white-space: nowrap;
+  z-index: 101;
+  font-family: "Prata", serif;
+  font-size: 1.3em;
+  color: var(--detail-color);
+}
+
+.nav-item {
+  margin: 0 25px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  margin-top: -200px;
+  background-color: var(--main-color);
+  opacity: 0.8;
+  width: 100%;
+  padding: 15px 0;
+  justify-content: space-around;
+  z-index: 100;
+  font-family: "Prata", serif;
+  font-size: 0.9em;
+  color: var(--detail-color);
+}
+
+.github-logo {
+  width: 1.2em;
+  margin-right: 5px;
+}
+
+.nav-item:hover,
+.footer-item:hover {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* HOME PAGE */
+
+.main-center {
+  position: absolute;
+  max-width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--main-color);
+  padding: 50px;
+  opacity: 0.9;
+  text-align: center;
+  color: var(--detail-color);
+}
+
+.restaurant-name {
+  align-items: center;
+  font-family: "Mate", serif;
+  font-size: 1.3em;
+  user-select: none;
+}
+
+h1.name {
+  font-family: "Prata", serif;
+  font-size: 3.5em;
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--detail-color);
+  margin-bottom: 10px;
+}
+
+.quote {
+  margin-top: 50px;
+  font-family: "Mate", serif;
+  font-style: italic;
+  color: var(--secondary-color);
+}
+
+/* MENU */
+
+.menu-container {
+  width: 70%;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 250px;
+}
+
+.card-menu {
+  width: 50vw;
+  min-height: calc(50vw / 2);
+  margin: 75px 0;
+  color: var(--secondary-color);
+  background-color: var(--detail-color);
+  position: relative;
+  font-family: "Mate", serif;
+}
+
+.img-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: var(--detail-color);
+  background-size: cover;
+  justify-content: flex-end;
+  box-shadow: 0 10px 16px -6px black;
+}
+
+.card-menu-description {
+  width: 30%;
+  height: 100%;
+  background-color: var(--main-color);
+  opacity: 0.9;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 25px;
+  overflow: auto;
+}
+
+.dish-title {
+  font-size: 2em;
+  margin: 15px 0;
+  font-family: "Prata", serif;
+}
+
+.dish-paragraph,
+.price {
+  margin: 15px 0;
+}
+
+.price {
+  color: var(--detail-color);
+}
+
+/* CONTACT US */
+
+.contact-container {
+  position: absolute;
+  min-width: 25%;
+  max-width: 90%;
+  top: 50%;
+  left: 5%;
+  transform: translate(0, -50%);
+  background-color: var(--main-color);
+  padding: 50px;
+  opacity: 0.9;
+  text-align: center;
+  font-family: "Mate", serif;
+  color: var(--detail-color);
+}
+
+.info-container {
+  text-align: start;
+  padding-top: 15px;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  color: var(--secondary-color);
+}
+
+@media screen and (max-width: 1024px) {
+  h1.name {
+    font-size: 2.5em;
+  }
+
+  .menu-container {
+    width: 100%;
+  }
+
+  .card-menu {
+    width: 70vw;
+    min-height: calc(70vw / 2);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card-menu {
+    width: 90vw;
+    min-height: calc(90vw / 2);
+  }
+}
