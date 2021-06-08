@@ -33,7 +33,7 @@ const menuItem = (name, price) => {
 const menuPage = () => {
   const { body } = document;
   body.classList.add('main-background');
-  body.style.backgroundImage = 'url(/dist/images/menu-bg.png)';
+  body.style.backgroundImage = 'url(images/menu-bg.png)';
 
   const mainMenu = document.createElement('div');
   mainMenu.classList.add('menu-container', 'd-flex');

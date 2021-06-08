@@ -1,7 +1,7 @@
 const homePage = () => {
   const { body } = document;
   body.classList.add('main-background');
-  body.style.backgroundImage = 'url(/dist/images/pub.png)';
+  body.style.backgroundImage = 'url(images/pub.png)';
 
   const center = document.createElement('div');
   const nameContainer = document.createElement('div');

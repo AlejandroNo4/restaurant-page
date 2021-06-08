@@ -7,9 +7,9 @@ const footer = () => {
 
   const gitIcon = document.createElement('img');
   const gitLegend = document.createElement('span');
-  gitIcon.src = '/dist/images/icons/github.svg';
+  gitIcon.src = 'images/icons/github.svg';
   gitIcon.classList.add('github-logo');
-  gitLegend.innerText = 'Github.com';
+  gitLegend.innerText = 'Github.com/AlejandroNo4';
   github.appendChild(gitIcon);
   github.appendChild(gitLegend);
 

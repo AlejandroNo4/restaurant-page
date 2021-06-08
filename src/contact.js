@@ -1,7 +1,7 @@
 const contactPage = () => {
   const { body } = document;
   body.classList.add('main-background');
-  body.style.backgroundImage = 'url(/dist/images/outside-front.png)';
+  body.style.backgroundImage = 'url(images/outside-front.png)';
 
   const contact = document.createElement('div');
   const title = document.createElement('h1');
