@@ -2,23 +2,25 @@
 
 # Restaurant Page
 
-> A restaurant page made with javascript using webpack.
+> A restaurant page made with javascript using Webpack.
 
 <p align="center">
   <img src="app_screenshot.png" width="800">
 </p>
 
-This project is part of the Microverse curriculum "Javascript." It is made with learning proposes. To practice the creation of a web page using javascript and webpack.
+This project is part of the Microverse curriculum "Javascript." It is made with learning proposes. To practice the creation of a web page using javascript and Webpack.
 
 
 The structure is designed so that the index.js document imports all the modules to visit. (home.js, menu.js
-and contact.js) Also, here is the code that handles the page content change.
+, and contact.js) Also, here is the code that handles the page content change.
 
 
-That is, the content is not in different HTML pages, but Webpack compiles the javascript modules to generate a single file that can be read by the web browser.
+That is, the content is not at different HTML pages, but Webpack compiles the javascript modules to generate a single file that can be read by the web browser.
 
 
 ## Live Version
+
+[Live version here!](https://alejandrono4.github.io/restaurant-page/)
 
 ## Getting Started
 
@@ -28,7 +30,7 @@ To get a local copy up and running follow these simple example steps.
 
       $ git clone https://github.com/AlejandroNo4/restaurant-page.git
 
-- Now that you have the repository in your local machine. Change the direction of the local file with your terminal. Just type "$ cd" (without the $ sign) and the path to reach the library-js folder.<br/>
+- Now that you have the repository in your local machine. Change the direction of the local file with your terminal. Just type "$ cd" (without the $ sign) and the path to reach the restaurant-page folder.<br/>
   Something like:
 
         $ cd User/Documents/restaurant-page
